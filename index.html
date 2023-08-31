@@ -17,7 +17,12 @@
 			//możemy teraz modyfikowac element albo sprawdizc jego właściwości
 
 			const ctx = canvas.getContext("2d"); //tryb rysowania, okreslonego za pomocą obiektu context - wszystko zapisane do zmiennej ctx
-			ctx.fillStyle = "rgb(109,207,0)";
+			ctx.shadowOffsetX = -5;
+			ctx.shadowOffsetY = 5;
+			ctx.shadowColor = "rgba(0,0,0,0.2)";
+			ctx.shadowBlur = 3;
+			ctx.fillStyle = "dodgerblue";
+			ctx.font = "bold 40px Arial, sans-serif";
 
 			//CONSTANTS
 			const CANVAS_HEIGHT = canvas.height;
